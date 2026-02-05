@@ -50,7 +50,31 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* 隐藏滚动条，但仍可滚动 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* 兼容 Firefox */
+html {
+  scrollbar-width: none;
 }

@@ -118,7 +118,7 @@ export function TemplateEditor({ value, onChange }: TemplateEditorProps) {
                   onChange={handleChange}
                   onFocus={() => setIsFocused(true)}
                   onBlur={() => setIsFocused(false)}
-                  className="w-full h-full min-h-[200px] p-3 font-mono text-sm leading-6 bg-transparent text-transparent caret-foreground resize-none focus:outline-none"
+                  className="w-full h-full min-h-[200px] p-3 font-mono text-sm leading-6 bg-transparent text-transparent caret-foreground resize-none focus:outline-none no-scrollbar"
                   spellCheck={false}
                 />
               </div>
