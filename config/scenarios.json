@@ -1,0 +1,44 @@
+{
+  "scenarios": [
+    {
+      "id": "refactor-new",
+      "name": "仿写新增",
+      "icon": "file",
+      "template": "你是一个资深前端专家。\n请阅读以下上下文文件：\n{file_list}\n\n任务目标：\n{user_intent}\n\n注意：请根据上下文文件的代码风格进行操作。如果文件是参考用途，请不要修改原文件。"
+    },
+    {
+      "id": "modification",
+      "name": "现有修改",
+      "icon": "wrench",
+      "template": "你是一个资深前端专家。\n请阅读以下需要修改的文件：\n{file_list}\n\n修改需求：\n{user_intent}\n\n注意：\n1. 保持现有代码风格和架构\n2. 只修改必要的部分\n3. 确保不引入新的 bug"
+    },
+    {
+      "id": "api-sync",
+      "name": "接口对齐",
+      "icon": "link",
+      "template": "你是一个资深前端专家，擅长 TypeScript 类型系统。\n请将以下 JSON 数据转换为 TypeScript 接口定义：\n\nJSON 数据：\n{json_data}\n\n接口名称：{interface_name}\n\n要求：\n1. 使用 interface 而非 type\n2. 添加必要的 JSDoc 注释\n3. 正确处理可选字段\n4. 嵌套对象需要单独定义接口"
+    },
+    {
+      "id": "unit-test",
+      "name": "单元测试",
+      "icon": "flask",
+      "template": "你是一个资深前端测试专家。\n请为以下代码编写单元测试：\n\n测试目标：\n{test_target}\n\n参考代码：\n{reference_code}\n\n要求：\n1. 使用 Jest + Testing Library\n2. 覆盖主要功能和边界情况\n3. 测试用例命名清晰\n4. 包含正向和反向测试"
+    },
+    {
+      "name": "git命令",
+      "icon": "file",
+      "template": "git pull\n\ngit checkout -b {分支名称} origin/{分支名称}\n\ngit push origin HEAD:refs/for/{分支名称} \n\ngit commit --amend --no-edit",
+      "id": "custom-1770271857365"
+    }
+  ],
+  "selectedId": "custom-1770271857365",
+  "inputValues": {
+    "refactor-new": {
+      "file_list": ""
+    },
+    "custom-1770271857365": {
+      "分支名称": "1111"
+    }
+  },
+  "lastSaved": "2026-02-05T06:16:08.380Z"
+}
